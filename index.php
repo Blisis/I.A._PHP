@@ -7,9 +7,6 @@
 <body>
 <p>Va prezint urmatoarele teme:</p>
 <?php
-//include "tema_1.php";
-//pre;
-//include "tema_2.php";
 
 function prettyNames($uglyName) {
     $names = [
