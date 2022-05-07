@@ -2,7 +2,7 @@
 <head>
     <title>
         <?php
-        $nume="Tema 4"
+        $nume="Tema 4";
         echo "Tema 4";
         ?>
     </title>

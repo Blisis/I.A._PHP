@@ -12,27 +12,27 @@
 <h1 align="center"><?php echo $nume?></h1></br>
 <h3 align="center">Cerinte:</h3>
 
+
 <table cellpadding="10" border="1" valign="center">
     <tbody><tr valign="top">
         <td>
-            <p>In aplicatiile ce urmeaza, pentru a genera numere intregi aleatoare se foloseste functia <strong>rand(N1,N2)</strong> care returneaza valori in intervalul [N1,N2]. Ex: dupa executarea instructiunii $x = rand(1,100), variabila $x va avea o valoare intreaga mai mare sau egala cu 1 si mai mica sau egala cu 100. Executand de mai multe ori instructiunea, $x va capata diferite valori, distribuite uniform in intervalul 1...100.</p>
-
-            <h3 >Fixare de cunostinte</h3>
+            <h3 class="jobstitle">Instalare software</h3>
             <ul>
-                <li>se genereaza doua numere aleatoare. Se afiseaza cele doua numere si care dintre ele este mai mare, sub forma "Numarul <strong>N1</strong> este mai mare decat numarul <strong>N2</strong>". (numarul mai mare este afisat intotdeauna primul, iar cele doua numere sunt afisate bold)</li>
-                <li>se genereaza in mod aleator varsta unei persoane. Considerand varsta de pensionare ca fiind 65 de ani, se va afisa daca persoana in cauza este pensionata sau nu, si in cel de-al doilea caz, numarul de ani ramasi pana la pensionare</li>
-                <li>se genereaza in mod aleator lungimile celor doua catete ale unui triunghi dreptunghic. Sa se afiseze lungimile catetelor, ipotenuzei si a inaltimii perpendiculare pe ipotenuza. Se va folosi functia sqrt() care returneaza radacina patrata a numarului primit ca argument. Exemplu: executand $a = sqrt(9), variabila $a va avea apoi valoarea 3.</li>
+                <li>se descarca wampserver de pe www.wampserver.com</li>
+                <li>se descarca notepad++ de pe http://notepad-plus.sourceforge.net</li>
+                <li>asigurati-va ca porturile 80 (cel folosit de serverul web) si 3306 (cel folosit de MySQL) NU sunt deschise. Comanda netstat -an arata porturile deja deschise (cele aflate in starea LISTENING). </li>
+                <li>se porneste wampserver</li>
+                <li>se activeaza serverul folosind optiunea Put Online din meniul aplicatiei</li>
+                <li>se acceseaza serverul folosind URL-ul http://localhost dintr-un browser</li>
+                <li>se determina locatia default pentru DocumentRoot (radacina paginilor web) alegand link-ul phpinfo() din sectiunea Tools si vizualizand valoarea variabilei DOCUMENT_ROOT de la capitolul Apache Environment</li>
             </ul>
-
-            <h3 >Avansati</h3>
+            <h3 class="jobstitle">Creare alias-uri, verificarea corectei functionari</h3>
             <ul>
-                <li>Se genereaza in mod aleator o data de nastere. Pentru simplificare, luna generata va fi ianuarie sau februarie. Se va incerca generarea zilei in intervalul corect (1-31 pentru ianuarie, 1-28 sau 1-29 pentru februarie, in functie de an). Se va afisa un tabel HTML cu:
-                    <ul>
-                        <li>Data generata</li>
-                        <li>Daca anul nasterii este bisect  (folosind operatorul ternar)</li>
-                        <li>Zodia persoanei  (folosind operatorul ternar)</li>
-                    </ul>
-                </li></ul>
+                <li>In arhiva <a href="siteHTML.zip">siteHTML.zip</a> aflata in acelasi director cu acest fisier se gaseste un site ce contine exclusiv HTML si imagini. Se dezarhiveaza arhiva intr-un director ales de dvs - dar altul decat document root-ul determinat anterior!</li>
+                <li>se creeaza alias-ul <strong>/siteHTML</strong> catre directorul in care s-a dezarhivat site-ul. Se verifica corecta functionare a alias-ului accesand site-ul dezarhivat, la adresa <a href="http://localhost/siteHTML">http://localhost/siteHTML/</a></li>
+                <li>se procedeaza in acelasi fel pentru a crea un alias <strong>/manual</strong>, care va pointa catre PHP Manual. Versiunea de download a PHP Manual poate fi gasita la adresa  <a href="http://www.php.net/get/php_manual_en.tar.gz/from/a/mirror">http://www.php.net/get/php_manual_en.tar.gz/from/a/mirror</a>. Puteti pastra acest alias dupa incheierea cu succes a aplicatiei, deoarece veti apela des la PHP Manual pe viitor</li>
+                <li>se verifica corecta functionare a interpretorului PHP integrat in serverul web, dezarhivand de data aceasta <a href="sitePHP.zip">sitePHP.zip</a>. Se creeaza un alt alias, <strong>/sitePHP</strong>, catre directorul ales pentru dezarhivare si se verifica functionarea folosind <a href="http://localhost/sitePHP/">http://localhost/sitePHP/</a></li>
+            </ul>
         </td>
 
 
