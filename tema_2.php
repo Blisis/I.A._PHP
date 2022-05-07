@@ -1,4 +1,19 @@
+<html>
+<head>
+    <title>
+        <?php
+        echo "Tema 2";
+        ?>
+    </title>
+</head>
+<body>
 <?php
-echo "tema 2";
+
+
+
+
 
 ?>
+</body>
+</html>
+
